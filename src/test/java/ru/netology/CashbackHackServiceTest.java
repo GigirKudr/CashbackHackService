@@ -1,7 +1,8 @@
 package ru.netology;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.junit.Assert;
+import org.junit.Test;
+
 
 
 public class CashbackHackServiceTest {
@@ -34,8 +35,6 @@ public class CashbackHackServiceTest {
 
         int actual = bonus.remain(amount);
         int expected = 0;
-        System.out.println(actual);
-        System.out.println(expected);
 
         Assert.assertEquals(actual, expected);
     }
